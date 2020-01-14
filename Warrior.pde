@@ -17,22 +17,22 @@ class Warrior {
     name = n;
     level = l;
     if (wt == "Archer" || wt == "Swordsman" || wt == "Axesman" || wt == "Lancer"){ //Makes sure the warrior type given is a valid warrior type
-      warriorType = wt;
+      this.warriorType = wt;
     }
     else{
-      warriorType = "Invalid"; //If the warrior type given is not valid, simply give the warrior type of 'Invalid'
+      this.warriorType = "Invalid"; //If the warrior type given is not valid, simply give the warrior type of 'Invalid'
     }
     
-    health = 100 + (2*this.level) ; //Sets the warriors health based on their current level
-    healthMax = this.health; //Takes note of the warriors max health (as this.health will be constantly changing);
-    potions = int(random(0,4)); //Give the warrior a random amount of potions between 0-3
-    xpNeeded = (7*this.level); //Takes note of the xp needed for the warrior to reach their next level
+    this.health = 100 + (2*this.level) ; //Sets the warriors health based on their current level
+    this.healthMax = this.health; //Takes note of the warriors max health (as this.health will be constantly changing);
+    this.potions = int(random(0,4)); //Give the warrior a random amount of potions between 0-3
+    this.xpNeeded = (7*this.level); //Takes note of the xp needed for the warrior to reach their next level
     
-    attackPower = (int(random(1, (2+ ( 1* (this.level / 6 )))))) + ( (this.level * 5)/4 ) ; //Sets the attack power of the warrior. The heigher the level, the heigher the attack power (also a random element in there so not every warrior is the same)
-    defencePower = (int(random(1, (2+ ( 1* (this.level / 8 )))))) + ( (this.level *3 ) /4 ); //Sets the defence power of the warrior. The heigher the level, the heigher the defence power (also a random element in there so not every warrior is the same)
+    this.attackPower = (int(random(1, (2+ ( 1* (this.level / 6 )))))) + ( (this.level * 5)/4 ) ; //Sets the attack power of the warrior. The heigher the level, the heigher the attack power (also a random element in there so not every warrior is the same)
+    this.defencePower = (int(random(1, (2+ ( 1* (this.level / 8 )))))) + ( (this.level *3 ) /4 ); //Sets the defence power of the warrior. The heigher the level, the heigher the defence power (also a random element in there so not every warrior is the same)
     
-    xpCount = 0; //Gives the warrior 0 xp to start off with
-    hasWeapon = false; //The warrior has no weapon to start off with
+    this.xpCount = 0; //Gives the warrior 0 xp to start off with
+    this.hasWeapon = false; //The warrior has no weapon to start off with
     
     
   }

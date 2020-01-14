@@ -8,27 +8,27 @@ class Weapon{
   
   
   Weapon (String n, int ab, String wt){
-    name = n;
-    attackBonus = ab;
-    weaponType = wt;
+    this.name = n;
+    this.attackBonus = ab;
+    this.weaponType = wt;
     
     if (weaponType == "Sword"){ //If the weapon is a sword, set the warrior type they can be assigned to Swordsman
-      warriorType =  "Swordsman";
+      this.warriorType =  "Swordsman";
     }
     
     if (weaponType == "Bow"){ //If the weapon is a bow, set the warrior type they can be assigned to Archer
-      warriorType =  "Archer";
+      this.warriorType =  "Archer";
     }
     
     if (weaponType == "Axe"){ //If the weapon is an axe, set the warrior type they can be assigned to Axesman
-      warriorType =  "Axesman";
+      this.warriorType =  "Axesman";
     }
     
     if (weaponType == "Lance"){ //If the weapon is a lance, set the warrior type they can be assigned to Lancer
-      warriorType =  "Lancer";
+      this.warriorType =  "Lancer";
     }
     
-    hasOwner = false; //no weapon has a owner from the begining
+    this.hasOwner = false; //no weapon has a owner from the begining
     
     
     
